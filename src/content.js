@@ -1,5 +1,9 @@
 // Edit this file to personalize your portfolio. No other file needs to change.
 
+// Prefixes /files/... paths with Vite's configured base (e.g. '/gatezz/' in
+// production), so downloads still resolve when the site is hosted in a subpath.
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
 export const profile = {
   name: 'Arul Jeffry A',
   title: 'Electrical & Electronics Engineering Student',
@@ -7,7 +11,7 @@ export const profile = {
     'Final-year EEE undergraduate specializing in power electronics, power conversion, closed-loop control, multi-layer PCB design (KiCad), and embedded firmware on TI C2000 microcontrollers.',
   location: 'Tiruchirappalli / Tirunelveli, Tamil Nadu, India',
   avatarInitials: 'AJ',
-  resumeUrl: '/files/resume.pdf',
+  resumeUrl: asset('/files/resume.pdf'),
 }
 
 export const about = {
@@ -86,7 +90,7 @@ export const projects = [
     tags: ['MATLAB/Simulink', 'Power Electronics', 'PI Control'],
     link: '',
     repo: '',
-    report: '/files/simo-buck-converter-report.pdf',
+    report: asset('/files/simo-buck-converter-report.pdf'),
   },
   {
     title: 'Synchronous Buck Converter — TT Motor Drive (TI C2000)',
@@ -95,7 +99,7 @@ export const projects = [
     tags: ['TI C2000', 'Embedded C', 'KiCad', 'PCB Fabrication'],
     link: '',
     repo: '',
-    report: '/files/tt-motor-buck-converter-report.pdf',
+    report: asset('/files/tt-motor-buck-converter-report.pdf'),
   },
   {
     title: 'LAUNCHXL-F280049C — Four-Layer PCB Design',
