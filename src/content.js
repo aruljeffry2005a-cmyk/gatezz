@@ -14,9 +14,42 @@ export const about = {
   paragraphs: [
     "I'm a final-year Electrical and Electronics Engineering undergraduate (2027 batch, SASTRA Deemed University, Smart Grid and Electric Vehicles specialization) with hands-on experience in power electronics, power conversion, closed-loop control, multi-layer PCB design using KiCad, and embedded firmware development on TI C2000 microcontrollers.",
     "I'm looking for a Graduate Engineer Trainee (GET) or Project Engineer role where I can contribute to power conversion system design, circuit design, hardware debugging, and embedded control for industrial and electrification applications.",
-    "Recently, I completed an Electrical Engineering internship at TANGEDCO (Tamil Nadu Generation and Distribution Corporation Limited), Trichy Electricity Distribution Circle, where I studied energy metering, protection equipment (CTs, PTs, relays, circuit breakers), and substation SCADA monitoring.",
+    "Outside coursework, I've built and fabricated working PCBs, written embedded firmware for real hardware, and recently completed an internship at TANGEDCO focused on energy metering and substation protection systems.",
   ],
 }
+
+export const experience = [
+  {
+    role: 'Electrical Engineering Intern',
+    org: 'TANGEDCO — Tamil Nadu Generation and Distribution Corporation Limited, Trichy Electricity Distribution Circle',
+    period: 'Dec 2025',
+    bullets: [
+      'Studied energy meter types, operating principles, and testing procedures.',
+      'Covered CTs, PTs, transformers, relays, and circuit breakers, including their operating principles and ratings.',
+      'Analyzed substation single-line diagrams and SCADA-based voltage and current monitoring.',
+    ],
+  },
+]
+
+export const education = [
+  {
+    school: 'SASTRA Deemed to be University, Thanjavur',
+    degree: 'B.Tech, Electrical and Electronics Engineering (Smart Grid and Electric Vehicles)',
+    detail: 'CGPA: 7.115/10 · No standing arrears',
+    period: '2023 – 2027',
+  },
+  {
+    school: "St. Joseph's College Hr Sec School",
+    degree: 'Higher Secondary Certificate (HSC)',
+    detail: '80%',
+    period: '',
+  },
+]
+
+export const certifications = [
+  'PCB Design Course — MHI Training Centre, SASTRA Deemed to be University',
+  'Introduction to MATLAB and Simulink Workshop',
+]
 
 export const skills = [
   {
