@@ -21,6 +21,9 @@ function Projects() {
               {project.repo && (
                 <a href={project.repo} target="_blank" rel="noreferrer">Source</a>
               )}
+              {project.report && (
+                <a href={project.report} target="_blank" rel="noreferrer">Read report</a>
+              )}
             </div>
           </article>
         ))}

@@ -26,6 +26,11 @@ function Contact() {
             Twitter
           </a>
         )}
+        {contact.phone && (
+          <a href={`tel:${contact.phone}`} className="btn btn-secondary">
+            {contact.phone}
+          </a>
+        )}
       </div>
     </section>
   )
